@@ -9,7 +9,7 @@ def clean(x):
     return x
 
 
-def to_jsonl(src_file, dst_file):
+def to_jsonl(src_file, dst_file): # src_file means the source files".txt" dst_file means the destination files".json", represents path respectively.
     all_files = os.listdir(src_file)
     if not os.path.exists(dst_file):
         os.mkdir(dst_file)
